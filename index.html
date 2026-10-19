@@ -19,7 +19,7 @@
     <a class="brand" href="#home" aria-label="Cassey Robles home"></span></span><span class="brand-name">CWDSR<span>vibe</span></span></a>
     <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false"><span></span><span></span></button>
     <nav class="nav" id="navMenu" aria-label="Main navigation">
-      <a href="#about">About</a><a href="#work">Projects</a><a href="#stack">Stack</a><a href="#contact">Contact</a>
+      <a href="#about">About</a><a href="#work">Projects</a><a href="#stack">Stack</a><a href="#gallery">Gallery</a><a href="#contact">Contact</a>
       <button class="theme-toggle" id="themeToggle" aria-label="Switch color theme" title="Switch color theme"><span class="theme-icon">☼</span></button>
     </nav>
   </header>
@@ -83,8 +83,34 @@
       <div class="toolbox glass-card reveal"><div class="tool-group"><div class="tool-group-head"><span class="tool-icon">⌘</span><div><h3>Frontend</h3><p>What people see and feel</p></div></div><div class="tool-list"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>Responsive Design</span></div></div><div class="tool-group"><div class="tool-group-head"><span class="tool-icon">{ }</span><div><h3>Backend & Logic</h3><p>What makes it work</p></div></div><div class="tool-list"><span>APIs</span><span>Forms & Validation</span><span>Data Flow</span><span>System Logic</span></div></div><div class="tool-group"><div class="tool-group-head"><span class="tool-icon">✳</span><div><h3>Workflow</h3><p>How I like to build</p></div></div><div class="tool-list"><span>VS Code</span><span>Git Basics</span><span>AI-Assisted Coding</span><span>Iterative Prototyping</span></div></div><div class="toolbox-foot"><span class="status-dot"></span> This stack evolves with every project. Skills listed are a learning-focused snapshot, not a certification list.</div></div>
     </section>
 
+    <section class="section-wrap section-block gallery-section" id="gallery" aria-labelledby="gallery-title">
+      <div class="section-heading heading-row reveal">
+        <div><p class="eyebrow">04 / MOMENTS & BUILDS</p><h2 id="gallery-title">Gallery</h2></div>
+        <div class="gallery-controls" aria-label="Gallery controls">
+          <button class="gallery-arrow" id="galleryPrevious" type="button" aria-label="Show previous gallery images" disabled>‹</button>
+          <button class="gallery-arrow" id="galleryNext" type="button" aria-label="Show next gallery images" disabled>›</button>
+        </div>
+      </div>
+      <div class="gallery-viewport reveal" id="galleryViewport" role="region" aria-label="Portfolio image gallery" tabindex="0">
+        <div class="gallery-track">
+          <figure class="gallery-item">
+            <img src="./assets/graduation-portrait.jpg" alt="Cassey Robles in graduation attire" loading="lazy" />
+            <figcaption><span class="gallery-caption-title">A new milestone</span><span class="gallery-caption-detail">Graduation portrait</span></figcaption>
+          </figure>
+          <figure class="gallery-item">
+            <img src="./assets/commencement.jpg" alt="Bataan Peninsula State University commencement ceremony" loading="lazy" />
+            <figcaption><span class="gallery-caption-title">Commencement day</span><span class="gallery-caption-detail">Bataan Peninsula State University</span></figcaption>
+          </figure>
+          <figure class="gallery-item">
+            <img src="./assets/mirror-selfie.png" alt="Cassey taking a mirror selfie in a white hoodie" loading="lazy" />
+            <figcaption><span class="gallery-caption-title">Off the clock</span><span class="gallery-caption-detail">A casual moment</span></figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
     <section class="section-wrap contact-section" id="contact">
-      <div class="contact-panel reveal"><div class="contact-orb orb-left"></div><div class="contact-orb orb-right"></div><p class="eyebrow">04 / YOUR TURN</p><h2>Got an idea?<br><span class="gradient-text">Let's make it real.</span></h2><p class="contact-copy">I'm always up for learning, collaborating, and exploring ideas that solve real problems. Have a project or suggestion in mind?</p><div class="contact-actions"><button class="button button-primary" id="contactButton">Start a conversation <span>↗</span></button><button class="button button-quiet" id="copyNameButton">Copy my name <span>⧉</span></button></div><p class="contact-hint" id="contactHint" aria-live="polite"><code></code>.</p></div>
+      <div class="contact-panel reveal"><div class="contact-orb orb-left"></div><div class="contact-orb orb-right"></div><p class="eyebrow">05 / YOUR TURN</p><h2>Got an idea?<br><span class="gradient-text">Let's make it real.</span></h2><p class="contact-copy">I'm always up for learning, collaborating, and exploring ideas that solve real problems. Have a project or suggestion in mind?</p><div class="contact-actions"><button class="button button-primary" id="contactButton">Start a conversation <span>↗</span></button><button class="button button-quiet" id="copyNameButton">Copy my name <span>⧉</span></button></div><p class="contact-hint" id="contactHint" aria-live="polite"><code></code>.</p></div>
     </section>
   </main>
 
