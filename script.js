@@ -99,35 +99,6 @@ document.getElementById('copyNameButton').addEventListener('click', async () => 
 
 document.getElementById('year').textContent = new Date().getFullYear();
 
-const galleryViewport = document.getElementById('galleryViewport');
-const galleryPrevious = document.getElementById('galleryPrevious');
-const galleryNext = document.getElementById('galleryNext');
-
-if (galleryViewport && galleryPrevious && galleryNext) {
-  const updateGalleryControls = () => {
-    const maxScroll = galleryViewport.scrollWidth - galleryViewport.clientWidth;
-    galleryPrevious.disabled = galleryViewport.scrollLeft <= 1;
-    galleryNext.disabled = maxScroll - galleryViewport.scrollLeft <= 1;
-  };
-
-  const scrollGallery = direction => {
-    const firstItem = galleryViewport.querySelector('.gallery-item');
-    if (!firstItem) return;
-
-    const gap = parseFloat(getComputedStyle(galleryViewport.querySelector('.gallery-track')).columnGap) || 0;
-    galleryViewport.scrollBy({
-      left: direction * (firstItem.getBoundingClientRect().width + gap),
-      behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth'
-    });
-  };
-
-  galleryPrevious.addEventListener('click', () => scrollGallery(-1));
-  galleryNext.addEventListener('click', () => scrollGallery(1));
-  galleryViewport.addEventListener('scroll', updateGalleryControls, { passive: true });
-  window.addEventListener('resize', updateGalleryControls);
-  updateGalleryControls();
-}
-
 const chatWidget = document.getElementById('chatWidget');
 const chatLauncher = document.getElementById('chatLauncher');
 const chatClose = document.getElementById('chatClose');
