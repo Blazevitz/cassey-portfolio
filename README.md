@@ -9,7 +9,7 @@ A responsive, animated portfolio built with plain HTML, CSS, and JavaScript. No 
 ## Personalize before publishing
 Open `script.js` and update `CONTACT_EMAIL` and/or `GITHUB_URL` with your real contact details. These are intentionally blank so the portfolio does not display invented contact information.
 
-Update the project cards in `index.html` with verified GitHub repositories, live demos, and additional project details when available. The current project cards are labeled as learning concepts rather than claiming employment or finished production systems. The IoTera Systems card uses its preview image from `assets/iotera-systems.png`. Add or replace Gallery photos in the Gallery section of `index.html`, placing image files in `assets/`.
+Update the project cards in `index.html` with verified GitHub repositories, live demos, and additional project details when available. Keep each project's description and status badge aligned with its verified scope. The IoTera Systems and Housetory cards use preview images from `assets/iotera-systems.png` and `assets/housetory-dashboard.png`. Add or replace Gallery photos in the Gallery section of `index.html`, placing image files in `assets/`.
 
 ## Features
 - Responsive desktop, tablet, and mobile layouts

@@ -6,6 +6,9 @@
 .hero-copy h1 .hero-name{display:inline-block;white-space:nowrap;font-size:clamp(.65em,4.7vw,.85em)}
 .preview-iotera{background:#f4f5fb}
 .preview-iotera img{display:block;width:100%;height:100%;object-fit:cover;object-position:top center}
+.preview-housetory{background:#f4f5f6}
+.preview-housetory img{display:block;width:100%;height:100%;object-fit:cover;object-position:top left}
+.project-subtitle{margin:-.55rem 0 .8rem;color:var(--muted);font-size:.76rem;font-weight:700;letter-spacing:.02em}
 .project-featured{grid-row:auto}
 .theme-icon{display:inline-block;transition:transform .65s cubic-bezier(.2,.8,.2,1)}
 body.light .theme-icon{transform:rotate(-180deg)}
